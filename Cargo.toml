@@ -7,7 +7,7 @@ edition = "2021"
 
 [dependencies]
 scale-value="*"
-scale-borrow={path="/home/gilescope/git/scale-borrow", features=[]}
+scale-borrow = { git="https://github.com/gilescope/scale-borrow.git" }
 
 [features]
 bitvec = ["scale-borrow/bitvec"]
