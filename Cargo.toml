@@ -6,7 +6,9 @@ edition = "2021"
 # See more keys and their definitions at https://doc.rust-lang.org/cargo/reference/manifest.html
 
 [dependencies]
-scale-value="*"
+# scale-value="*"
+scale-value={git="https://github.com/gilescope/scale-value.git", branch="wasm32" }
+# scale-value = {path="/home/gilescope/git/scale-value" }
 scale-borrow = { git="https://github.com/gilescope/scale-borrow.git", rev="32eaadb6599895928ac9ccec133940edf1da0d35" }
 
 [features]
