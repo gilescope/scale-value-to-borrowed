@@ -9,7 +9,7 @@ edition = "2021"
 # scale-value="*"
 scale-value={git="https://github.com/gilescope/scale-value.git", branch="wasm32" }
 # scale-value = {path="/home/gilescope/git/scale-value" }
-scale-borrow = { git="https://github.com/gilescope/scale-borrow.git", rev = "9c22ac17acd34a4310186503993e1630a50aacee" }
+scale-borrow = { git="https://github.com/gilescope/scale-borrow.git", rev = "02d9bc3" }
 
 [features]
 bitvec = ["scale-borrow/bitvec"]
