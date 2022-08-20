@@ -62,6 +62,10 @@ fn convert_composite<T>(
                     }
                 })
             {
+                if comp.len() == 0 {
+                    return scale_borrow::Value::Object(Box::new(vec![]));
+                }
+
                 let v: Vec<u8> = comp
                     .iter()
                     .map(|c| {
