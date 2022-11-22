@@ -26,13 +26,8 @@ pub fn convert<T>(input: &'_ scale_value::Value<T>, optimise: bool) -> scale_bor
             var.name.as_str(),
             convert_composite(&var.values, optimise),
         )])),
-        #[cfg(feature = "bitvec")]
         scale_value::ValueDef::BitSequence(bits) => {
             scale_borrow::Value::Bits(Box::new(bits.clone()))
-        }
-        #[cfg(not(feature = "bitvec"))]
-        scale_value::ValueDef::BitSequence(_bits) => {
-            panic!("use bitvec feature to use bitvec.");
         }
     }
 }
