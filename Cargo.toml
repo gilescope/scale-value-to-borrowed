@@ -7,9 +7,10 @@ edition = "2021"
 
 [dependencies]
 # scale-value="*"
-scale-value={git="https://github.com/gilescope/scale-value.git", branch="wasm32" }
+scale-value = {  git="https://github.com/paritytech/scale-value.git",  default-features = false, features = [] }
+# scale-value={git="https://github.com/gilescope/scale-value.git", branch="wasm32" }
 # scale-value = {path="/home/gilescope/git/scale-value" }
-scale-borrow = { git="https://github.com/gilescope/scale-borrow.git", rev = "f2fe9b4145b4c4a2ffb13da11c6cf3bf0322d444" }
+scale-borrow = { git="https://github.com/gilescope/scale-borrow.git", rev = "2cfe19457765ae68e5c57a303abe80ae7ced6c7e" }
 
 [features]
 bitvec = ["scale-borrow/bitvec"]
